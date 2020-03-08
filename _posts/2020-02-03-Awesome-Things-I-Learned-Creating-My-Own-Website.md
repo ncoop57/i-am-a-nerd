@@ -5,7 +5,7 @@ toc: true
 comments: true
 layout: post
 categories: [website, awesome]
-image: images/favicon.png
+image: images/favicon.ico
 author: Nathan Cooper
 ---
 
