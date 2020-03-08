@@ -1,9 +1,13 @@
-# Awesome Things I Learned Creating My Own Website
-
-- toc: true 
-- badges: true
-- comments: true
-- image: images/logo.png
+---
+title: "Awesome Things I Learned Creating My Own Website"
+description: "A walk through of the awesome hings I Learned while making my own personal website."
+toc: true
+comments: true
+layout: post
+categories: [website, awesome]
+image: images/logo.png
+author: Nathan Cooper
+---
 
 Hello, Solar System! (As a space faring civilization, I feel it only customary we update our greetings to reflect such awesome accomplishments 🤓) I am a nerd and hopefully you are as well.
 
