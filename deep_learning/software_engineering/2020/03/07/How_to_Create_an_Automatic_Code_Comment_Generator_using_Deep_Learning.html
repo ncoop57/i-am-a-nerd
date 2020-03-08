@@ -112,7 +112,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      33 min read
+      32 min read
     
 </span></p>
 
@@ -492,90 +492,6 @@ Archive:  java.zip
 </div>
 
     </details>
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      &lt;progress value='88221' class='' max='88221', style='width:300px; height:20px; vertical-align: middle;'&gt;&lt;/progress&gt;
-      100.00% [88221/88221 00:02&lt;00:00]
-    </div>
-    
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      &lt;progress value='2840' class='' max='2840', style='width:300px; height:20px; vertical-align: middle;'&gt;&lt;/progress&gt;
-      100.00% [2840/2840 00:00&lt;00:00]
-    </div>
-    
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      &lt;progress value='5254' class='' max='5254', style='width:300px; height:20px; vertical-align: middle;'&gt;&lt;/progress&gt;
-      100.00% [5254/5254 00:00&lt;00:00]
-    </div>
-    
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -707,7 +623,7 @@ Archive:  java.zip
 <span class="k">def</span> <span class="nf">gen_sp_model</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">tokenizer_name</span><span class="p">,</span> <span class="n">col</span><span class="p">):</span>
     <span class="sd">"""Trains a SentencePiece BPE model from a pandas dataframe"""</span>
     <span class="n">fname</span> <span class="o">=</span> <span class="n">df_to_txt_file</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">col</span><span class="p">)</span>
-    <span class="n">sp</span><span class="o">.</span><span class="n">SentencePieceTrainer</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="sa">f</span><span class="s1">'--input=</span><span class="si">{fname}</span><span class="s1"> --model_prefix={output / tokenizer_name} --hard_vocab_limit=false'</span><span class="p">)</span>
+    <span class="n">sp</span><span class="o">.</span><span class="n">SentencePieceTrainer</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="sa">f</span><span class="s1">'--input=</span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s1"> --model_prefix=</span><span class="si">{</span><span class="n">output</span> <span class="o">/</span> <span class="n">tokenizer_name</span><span class="si">}</span><span class="s1"> --hard_vocab_limit=false'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -787,116 +703,6 @@ Archive:  java.zip
 </div>
 
     </details>
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      &lt;progress value='73755' class='' max='73755', style='width:300px; height:20px; vertical-align: middle;'&gt;&lt;/progress&gt;
-      100.00% [73755/73755 00:26&lt;00:00]
-    </div>
-    
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      &lt;progress value='12402148' class='' max='12402148', style='width:300px; height:20px; vertical-align: middle;'&gt;&lt;/progress&gt;
-      100.00% [12402148/12402148 00:12&lt;00:00]
-    </div>
-    
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      &lt;progress value='73755' class='' max='73755', style='width:300px; height:20px; vertical-align: middle;'&gt;&lt;/progress&gt;
-      100.00% [73755/73755 00:07&lt;00:00]
-    </div>
-    
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      &lt;progress value='2530502' class='' max='2530502', style='width:300px; height:20px; vertical-align: middle;'&gt;&lt;/progress&gt;
-      100.00% [2530502/2530502 00:02&lt;00:00]
-    </div>
-    
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -1763,7 +1569,7 @@ Min loss divided by 10: 1.74E-02
     <span class="n">callback_fns</span> <span class="o">=</span> <span class="p">[</span>
         <span class="n">callbacks</span><span class="o">.</span><span class="n">SaveModelCallback</span><span class="p">(</span>
             <span class="n">learn</span><span class="p">,</span> <span class="n">every</span><span class="o">=</span><span class="s1">'improvement'</span><span class="p">,</span>
-            <span class="n">monitor</span><span class="o">=</span><span class="s1">'valid_loss'</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s1">'</span><span class="si">{model_name}</span><span class="s1">_save_model'</span>
+            <span class="n">monitor</span><span class="o">=</span><span class="s1">'valid_loss'</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s1">_save_model'</span>
         <span class="p">),</span>
         <span class="n">callbacks</span><span class="o">.</span><span class="n">EarlyStoppingCallback</span><span class="p">(</span>
             <span class="n">learn</span><span class="p">,</span> <span class="n">monitor</span><span class="o">=</span><span class="s1">'valid_loss'</span><span class="p">,</span> <span class="n">min_delta</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">,</span>
@@ -1997,38 +1803,6 @@ Better model found at epoch 7 with valid_loss value: 0.7698812484741211.
 </div>
 
     </details>
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      &lt;progress value='16' class='' max='16', style='width:300px; height:20px; vertical-align: middle;'&gt;&lt;/progress&gt;
-      100.00% [16/16 00:08&lt;00:00]
-    </div>
-    
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
     
 
