@@ -18,6 +18,10 @@ I will be going through some of the amazing things that are happening in that br
 
 In the amazing book "**[Thinking Fast and Slow](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555)**" by Daniel Kahneman, who is a world renowned economist and neuroscientist, the high level ways in which we “think” are examined. In this book,  things like decisions, problem solving, emotional states, and why we make errors in our logic, both consciously and subconsciously, are shown. I highly recommend this book, I personally have been enjoying the [Audiobook](https://www.audible.com/pd/Thinking-Fast-and-Slow-Audiobook/B005TKKCWC) version!
 
+![image alt text]({{ site.baseurl }}/images/neuroscience/systems.png)
+
+*Overview of the two different Systems that make up your thinking.*
+
 Daniel Kahneman introduced the idea of two systems of thought, which he named very creatively System 1 and System 2. System 1 is more associated with intuition or *fast thinking* that processes things without much mental strain such as looking at a picture of a cat and understanding that what you are currently looking at is in fact a cat. System 1 is also automatic in the sense that you have no control over coming to the realization that a cat is in the picture. System 2, on the other hand, is involved in more deliberate and difficult processing that requires you to put in work for solving some task such as calculating that the multiplication of 18 and 32 is equal to 576. don’t worry, I’ll wait :).
 
 ![image alt text]({{ site.baseurl }}/images/neuroscience/image_0.jpg)
