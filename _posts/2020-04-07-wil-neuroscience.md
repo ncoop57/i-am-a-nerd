@@ -4,7 +4,7 @@ summary: "Join me as I explore what is going on in that brain of ours."
 toc: false
 comments: true
 image: images/neuroscience/mental-2197585_1920.jpg
-hide: true
+hide: false
 search_exclude: true
 categories: [wil, neuroscience]
 ---
