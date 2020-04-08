@@ -48,7 +48,7 @@ Now, your brain does not actually have these System 1 and System 2 structures ph
 
 Your brain can be organized into two main parts, the Neocortex, which is what most people think of when they imagine a brain, and the Cerebellum, which is not as well known by most but is believed to play a big part in how we think. The Neocortex is the coloured part in the above image and it can be roughly broken down into 4 main *lobes*, but each lobe is heavily dependent on the others, so don’t think of them as truly distinct sections. You can see the responsibilities of each lobe in the table below.
 
-![image alt text]({{ site.baseurl }}/images/neuroscience/image_3.jpg)
+![image alt text]({{ site.baseurl }}/images/neuroscience/image_3.png)
 
 *Overall responsibilities of the different lobes of the brain.*
 
