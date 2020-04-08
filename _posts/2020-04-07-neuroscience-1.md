@@ -65,7 +65,7 @@ As you can see, even this very simple example of just processing what your eyes 
 
 <center>*[Pepe Silvia](https://knowyourmeme.com/memes/pepe-silvia) from It’s Always Sunny in Philadelphia*</center>
 
-## Conclusions
+# Conclusions
 
 Well, sadly that is all we are going to spend on the high level stuff of the brain. There are tons of additional stuff I could discuss about the high level part of your brain such as how the Cerebellum actually has half of all the neurons in your entire brain! And how much of its functions are not well understood because it seems to have its hands in processing everything! I could also discuss how there are different types of ways different parts of your brain represent input such as clusterization, hashing, and composition of different representations into new representations. However, there is a lot and we have already covered a lot of the super cool stuff! I hope you have enjoyed this first part of the Neuroscience series and have come away with a better or at least more confusing :) sense of how your brain works!
 
