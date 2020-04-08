@@ -1,5 +1,5 @@
 ---
-title: "What I Learned (WIL): Neuroscience Month [Part 1]"
+title: "What I Learned (WIL) Neuroscience Month Part 1"
 summary: "Join me as I explore what is going on in that brain of ours."
 toc: false
 comments: true
