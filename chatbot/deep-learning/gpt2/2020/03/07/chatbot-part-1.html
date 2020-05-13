@@ -12,11 +12,11 @@
 <link rel="canonical" href="https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/03/07/chatbot-part-1.html" />
 <meta property="og:url" content="https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/03/07/chatbot-part-1.html" />
 <meta property="og:site_name" content="IAmANerd" />
-<meta property="og:image" content="https://nathancooper.io/i-am-a-nerd/images/comment_gen_preview.png" />
+<meta property="og:image" content="https://nathancooper.io/i-am-a-nerd/images/chatbot.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-07T00:00:00-06:00" />
 <script type="application/ld+json">
-{"dateModified":"2020-03-07T00:00:00-06:00","image":"https://nathancooper.io/i-am-a-nerd/images/comment_gen_preview.png","description":"A tutorial for automatically generate code comments using Deep Learning.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/03/07/chatbot-part-1.html"},"url":"https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/03/07/chatbot-part-1.html","headline":"Open-Dialog Chatbots for Learning New Languages [Part 1]","datePublished":"2020-03-07T00:00:00-06:00","@context":"https://schema.org"}</script>
+{"dateModified":"2020-03-07T00:00:00-06:00","image":"https://nathancooper.io/i-am-a-nerd/images/chatbot.jpg","description":"A tutorial for automatically generate code comments using Deep Learning.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/03/07/chatbot-part-1.html"},"url":"https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/03/07/chatbot-part-1.html","headline":"Open-Dialog Chatbots for Learning New Languages [Part 1]","datePublished":"2020-03-07T00:00:00-06:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/i-am-a-nerd/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://nathancooper.io/i-am-a-nerd/feed.xml" title="IAmANerd" /><link rel="shortcut icon" type="image/x-icon" href="/i-am-a-nerd/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Open-Dialog Chatbots for Learning New Languages [Part 1] | IAmANerd</title>
@@ -28,11 +28,11 @@
 <link rel="canonical" href="https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/03/07/chatbot-part-1.html" />
 <meta property="og:url" content="https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/03/07/chatbot-part-1.html" />
 <meta property="og:site_name" content="IAmANerd" />
-<meta property="og:image" content="https://nathancooper.io/i-am-a-nerd/images/comment_gen_preview.png" />
+<meta property="og:image" content="https://nathancooper.io/i-am-a-nerd/images/chatbot.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-07T00:00:00-06:00" />
 <script type="application/ld+json">
-{"dateModified":"2020-03-07T00:00:00-06:00","image":"https://nathancooper.io/i-am-a-nerd/images/comment_gen_preview.png","description":"A tutorial for automatically generate code comments using Deep Learning.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/03/07/chatbot-part-1.html"},"url":"https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/03/07/chatbot-part-1.html","headline":"Open-Dialog Chatbots for Learning New Languages [Part 1]","datePublished":"2020-03-07T00:00:00-06:00","@context":"https://schema.org"}</script>
+{"dateModified":"2020-03-07T00:00:00-06:00","image":"https://nathancooper.io/i-am-a-nerd/images/chatbot.jpg","description":"A tutorial for automatically generate code comments using Deep Learning.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/03/07/chatbot-part-1.html"},"url":"https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/03/07/chatbot-part-1.html","headline":"Open-Dialog Chatbots for Learning New Languages [Part 1]","datePublished":"2020-03-07T00:00:00-06:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -112,7 +112,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      33 min read
+      32 min read
     
 </span></p>
 
@@ -185,7 +185,9 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://colab.research.google.com/github/ncoop57/i-am-a-nerd/blob/master/_notebooks/2020-03-07-chatbot-part-1.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<blockquote>
+<p>Image by <a href="https://pixabay.com/users/mohamed_hassan-5229782/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3589528">mohamed Hassan</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3589528">Pixabay</a></p>
+</blockquote>
 
 </div>
 </div>
@@ -251,8 +253,9 @@ window.onload = wrap_img;
 </h2>
 <p>In this post, we are going to use the GPT2 model (Generative Pre-Training 2), from the amazing paper <a href="https://openai.com/blog/better-language-models/">"Language Models are Unsupervised Multitask Learners"</a> by Alex Radford et. al. I will be giving a brief overview of this model. However, if you want a more in-depth explanation I highly recommend the blog post <a href="http://jalammar.github.io/illustrated-gpt2/">"The Illustrated GPT-2"</a> by Jay Alammar.</p>
 <p>GPT2 is what is called an autoregressive language model. This may sound complicated, but it is actually quiet simple, so lets break down what this means. Autoregressive means that the output of the model is fedback into the model as input. Here is a nice example of how that works:</p>
+<p><img src="https://github.com/ncoop57/i-am-a-nerd/blob/master/_notebooks/images/autoregressive.gif?raw=1" alt=""></p>
 <blockquote>
-<p>(Insert gif from deepmind <a href="https://deepmind.com/blog/article/wavenet-generative-model-raw-audio">https://deepmind.com/blog/article/wavenet-generative-model-raw-audio</a>)
+<p>Image From Deepmind <a href="https://deepmind.com/blog/article/wavenet-generative-model-raw-audio">https://deepmind.com/blog/article/wavenet-generative-model-raw-audio</a>
 Now, a language model is usually some statistical model that gives the probability of some word given the context. So, take the following example:</p>
 <p><em>An [blank] a day keeps the doctor away</em></p>
 </blockquote>
@@ -276,10 +279,10 @@ Now, a language model is usually some statistical model that gives the probabili
 <h2 id="GPT2-as-a-chatbot">
 <a class="anchor" href="#GPT2-as-a-chatbot" aria-hidden="true"><span class="octicon octicon-link"></span></a>GPT2 as a chatbot<a class="anchor-link" href="#GPT2-as-a-chatbot"> </a>
 </h2>
-<p>Great, so you may be asking yourself, "how do we use GPT2 as a chatbot?" To answer this question we need to turn our attention to another paper, <a href="https://arxiv.org/abs/1911.00536">"DialoGPT: Large-Scale Generative Pre-training for Conversational Response Generation"</a>. To see how we can repurpose this Generator, GPT2, look at the following example:</p>
+<p>Great, so you may be asking yourself, "how do we use GPT2 as a chatbot?" To answer this question we need to turn our attention to another paper, <a href="https://arxiv.org/abs/1911.00536">"DialoGPT: Large-Scale Generative Pre-training for Conversational Response Generation"</a>. To see how we can repurpose this generator, GPT2, look at the following example:</p>
 <blockquote>
 <p><em>Hi, how are you? [end_of_turn] I'm good, what about you? [end_of_turn] Not so good, lots of long nights at work. [end_of_turn] Darn, that sucks :( [end_of_conversation]</em>
-This is a sample conversation between two speakers. What's special about it is that there are special tokens that signify when one of the speakers has finished talked, which we in the biz call a turn. If we treat this example like our previous one with the autorgressive language mode, we can do some interesting things:</p>
+This is a sample conversation between two speakers. What's special about it is that there are special tokens that signify when one of the speakers has finished talking, which we in the biz call a turn. If we treat this example like our previous one with the autorgressive language mode, we can do some interesting things:</p>
 <p><em>Hi, how are you? [end_of_turn] [blank]</em></p>
 </blockquote>
 <p>If we use the same logic as we did previously, it is easy to see how we can now use GPT2 to guess the next word in this conversation.</p>
@@ -327,76 +330,6 @@ This is a sample conversation between two speakers. What's special about it is t
 </div>
     
 
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Imports</span>
-
-
-<span class="sd">"""</span>
-<span class="sd">Fine-tuning the library models for language modeling on a text file (GPT, GPT-2, BERT, RoBERTa).</span>
-<span class="sd">GPT and GPT-2 are fine-tuned using a causal language modeling (CLM) loss while BERT and RoBERTa are fine-tuned</span>
-<span class="sd">using a masked language modeling (MLM) loss.</span>
-<span class="sd">"""</span>
-
-<span class="kn">import</span> <span class="nn">glob</span>
-<span class="kn">import</span> <span class="nn">logging</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">pickle</span>
-<span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">re</span>
-<span class="kn">import</span> <span class="nn">shutil</span>
-<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Tuple</span>
-
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">torch</span>
-
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-
-<span class="kn">from</span> <span class="nn">torch.nn.utils.rnn</span> <span class="kn">import</span> <span class="n">pad_sequence</span>
-<span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">DataLoader</span><span class="p">,</span> <span class="n">Dataset</span><span class="p">,</span> <span class="n">RandomSampler</span><span class="p">,</span> <span class="n">SequentialSampler</span>
-<span class="kn">from</span> <span class="nn">torch.utils.data.distributed</span> <span class="kn">import</span> <span class="n">DistributedSampler</span>
-<span class="kn">from</span> <span class="nn">tqdm.notebook</span> <span class="kn">import</span> <span class="n">tqdm</span><span class="p">,</span> <span class="n">trange</span>
-
-<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-
-<span class="kn">from</span> <span class="nn">transformers</span> <span class="kn">import</span> <span class="p">(</span>
-    <span class="n">MODEL_WITH_LM_HEAD_MAPPING</span><span class="p">,</span>
-    <span class="n">WEIGHTS_NAME</span><span class="p">,</span>
-    <span class="n">AdamW</span><span class="p">,</span>
-    <span class="n">AutoConfig</span><span class="p">,</span>
-    <span class="n">AutoModelWithLMHead</span><span class="p">,</span>
-    <span class="n">AutoTokenizer</span><span class="p">,</span>
-    <span class="n">PreTrainedModel</span><span class="p">,</span>
-    <span class="n">PreTrainedTokenizer</span><span class="p">,</span>
-    <span class="n">get_linear_schedule_with_warmup</span><span class="p">,</span>
-<span class="p">)</span>
-
-
-<span class="k">try</span><span class="p">:</span>
-    <span class="kn">from</span> <span class="nn">torch.utils.tensorboard</span> <span class="kn">import</span> <span class="n">SummaryWriter</span>
-<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
-    <span class="kn">from</span> <span class="nn">tensorboardX</span> <span class="kn">import</span> <span class="n">SummaryWriter</span>
-
-<span class="c1"># Configs</span>
-<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
-
-<span class="n">MODEL_CONFIG_CLASSES</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">MODEL_WITH_LM_HEAD_MAPPING</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-<span class="n">MODEL_TYPES</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">conf</span><span class="o">.</span><span class="n">model_type</span> <span class="k">for</span> <span class="n">conf</span> <span class="ow">in</span> <span class="n">MODEL_CONFIG_CLASSES</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -408,11 +341,15 @@ This is a sample conversation between two speakers. What's special about it is t
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Args to allow for easy convertion of python script to notebook</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse</span>
+<span class="c1"># Args to allow for easy convertion of python script to notebook</span>
 <span class="k">class</span> <span class="nc">Args</span><span class="p">():</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">output_dir</span> <span class="o">=</span> <span class="s1">'output'</span>
@@ -455,6 +392,7 @@ This is a sample conversation between two speakers. What's special about it is t
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -893,11 +831,15 @@ To: /content/final_es_conv.csv
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">construct_conv</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">,</span> <span class="n">eos</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse</span>
+<span class="k">def</span> <span class="nf">construct_conv</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">,</span> <span class="n">eos</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
     <span class="c1"># from: https://stackoverflow.com/questions/952914/how-to-make-a-flat-list-out-of-list-of-lists</span>
     <span class="n">flatten</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">l</span><span class="p">:</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">l</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span><span class="p">]</span>
     <span class="n">conv</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">([</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="p">[</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">eos_token_id</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">row</span><span class="p">]))</span>
@@ -946,70 +888,7 @@ To: /content/final_es_conv.csv
 </div>
 </div>
 
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cacheing and storing of data/checkpoints</span>
-
-<span class="k">def</span> <span class="nf">load_and_cache_examples</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">,</span> <span class="n">df_trn</span><span class="p">,</span> <span class="n">df_val</span><span class="p">,</span> <span class="n">evaluate</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">ConversationDataset</span><span class="p">(</span><span class="n">tokenizer</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">df_val</span> <span class="k">if</span> <span class="n">evaluate</span> <span class="k">else</span> <span class="n">df_trn</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">set_seed</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
-    <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">seed</span><span class="p">)</span>
-    <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">seed</span><span class="p">)</span>
-    <span class="n">torch</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">seed</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">n_gpu</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">manual_seed_all</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">seed</span><span class="p">)</span>
-
-
-<span class="k">def</span> <span class="nf">_sorted_checkpoints</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">checkpoint_prefix</span><span class="o">=</span><span class="s2">"checkpoint"</span><span class="p">,</span> <span class="n">use_mtime</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
-    <span class="n">ordering_and_checkpoint_path</span> <span class="o">=</span> <span class="p">[]</span>
-
-    <span class="n">glob_checkpoints</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">output_dir</span><span class="p">,</span> <span class="s2">"</span><span class="si">{}</span><span class="s2">-*"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">checkpoint_prefix</span><span class="p">)))</span>
-
-    <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">glob_checkpoints</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">use_mtime</span><span class="p">:</span>
-            <span class="n">ordering_and_checkpoint_path</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getmtime</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="n">path</span><span class="p">))</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">regex_match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">".*</span><span class="si">{}</span><span class="s2">-([0-9]+)"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">checkpoint_prefix</span><span class="p">),</span> <span class="n">path</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">regex_match</span> <span class="ow">and</span> <span class="n">regex_match</span><span class="o">.</span><span class="n">groups</span><span class="p">():</span>
-                <span class="n">ordering_and_checkpoint_path</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="nb">int</span><span class="p">(</span><span class="n">regex_match</span><span class="o">.</span><span class="n">groups</span><span class="p">()[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">path</span><span class="p">))</span>
-
-    <span class="n">checkpoints_sorted</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">ordering_and_checkpoint_path</span><span class="p">)</span>
-    <span class="n">checkpoints_sorted</span> <span class="o">=</span> <span class="p">[</span><span class="n">checkpoint</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">checkpoint</span> <span class="ow">in</span> <span class="n">checkpoints_sorted</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">checkpoints_sorted</span>
-
-
-<span class="k">def</span> <span class="nf">_rotate_checkpoints</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">checkpoint_prefix</span><span class="o">=</span><span class="s2">"checkpoint"</span><span class="p">,</span> <span class="n">use_mtime</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">args</span><span class="o">.</span><span class="n">save_total_limit</span><span class="p">:</span>
-        <span class="k">return</span>
-    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">save_total_limit</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">return</span>
-
-    <span class="c1"># Check if we should delete older checkpoint(s)</span>
-    <span class="n">checkpoints_sorted</span> <span class="o">=</span> <span class="n">_sorted_checkpoints</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">checkpoint_prefix</span><span class="p">,</span> <span class="n">use_mtime</span><span class="p">)</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">checkpoints_sorted</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">args</span><span class="o">.</span><span class="n">save_total_limit</span><span class="p">:</span>
-        <span class="k">return</span>
-
-    <span class="n">number_of_checkpoints_to_delete</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">checkpoints_sorted</span><span class="p">)</span> <span class="o">-</span> <span class="n">args</span><span class="o">.</span><span class="n">save_total_limit</span><span class="p">)</span>
-    <span class="n">checkpoints_to_be_deleted</span> <span class="o">=</span> <span class="n">checkpoints_sorted</span><span class="p">[:</span><span class="n">number_of_checkpoints_to_delete</span><span class="p">]</span>
-    <span class="k">for</span> <span class="n">checkpoint</span> <span class="ow">in</span> <span class="n">checkpoints_to_be_deleted</span><span class="p">:</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Deleting older checkpoint [</span><span class="si">{}</span><span class="s2">] due to args.save_total_limit"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">checkpoint</span><span class="p">))</span>
-        <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">checkpoint</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
+    </details>
 </div>
     
 
@@ -1028,11 +907,15 @@ To: /content/final_es_conv.csv
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Training of model</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse</span>
+<span class="c1"># Training of model</span>
 
 <span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">train_dataset</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">PreTrainedModel</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">:</span> <span class="n">PreTrainedTokenizer</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">]:</span>
     <span class="sd">""" Train the model """</span>
@@ -1289,6 +1172,7 @@ To: /content/final_es_conv.csv
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -1303,11 +1187,15 @@ To: /content/final_es_conv.csv
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Main show runner</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse</span>
+<span class="c1"># Main show runner</span>
 
 <span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">df_trn</span><span class="p">,</span> <span class="n">df_val</span><span class="p">):</span>
     <span class="n">args</span> <span class="o">=</span> <span class="n">Args</span><span class="p">()</span>
@@ -1423,6 +1311,7 @@ To: /content/final_es_conv.csv
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -1450,10 +1339,10 @@ To: /content/final_es_conv.csv
 
 
 
-<div id="22c221d2-d724-4294-ae2e-9a2c83b7e032"></div>
+<div id="987ef7ee-79a2-44b0-b518-d85fc579a383"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#22c221d2-d724-4294-ae2e-9a2c83b7e032');
+var element = $('#987ef7ee-79a2-44b0-b518-d85fc579a383');
 
         (async () => {
             const url = await google.colab.kernel.proxyPort(6006, {"cache": true});
@@ -1820,6 +1709,7 @@ Consider using one of the following signatures instead:
 <a class="anchor" href="#Chatting-with-our-Model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Chatting with our Model<a class="anchor-link" href="#Chatting-with-our-Model"> </a>
 </h1>
 <p>Now that we have our model trained, let's it out for a spin and have our first conversation with it!</p>
+<p>In order to allow us to chitchat with our new bot we need to figure out when the model has finished its turn, i.e. when it has generated the [end_of_turn] token. When the model generates this token, we can switch back control of the conversation to the user so they can respond. Luckily, this is very easy to do with the Huggingface framework!</p>
 <p>The below code is copied pretty much verbatim from the creators of the DialoGPT model, which you can find <a href="https://huggingface.co/microsoft/DialoGPT-small">here</a>.</p>
 
 </div>
