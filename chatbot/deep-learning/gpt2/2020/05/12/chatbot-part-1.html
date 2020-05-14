@@ -297,8 +297,10 @@ window.onload = wrap_img;
 </h2>
 <p>Great, so you may be asking yourself, "how do we use GPT2 as a chatbot?" To answer this question we need to turn our attention to another paper, <a href="https://arxiv.org/abs/1911.00536">"DialoGPT: Large-Scale Generative Pre-training for Conversational Response Generation"</a>. To see how we can repurpose this generator, GPT2, look at the following example:</p>
 <blockquote>
-<p><em>Hi, how are you? [end_of_turn] I'm good, what about you? [end_of_turn] Not so good, lots of long nights at work. [end_of_turn] Darn, that sucks :( [end_of_conversation]</em>
-This is a sample conversation between two speakers. What's special about it is that there are special tokens that signify when one of the speakers has finished talking, which we in the biz call a turn. If we treat this example like our previous one with the autorgressive language mode, we can do some interesting things:</p>
+<p><em>Hi, how are you? [end_of_turn] I'm good, what about you? [end_of_turn] Not so good, lots of long nights at work. [end_of_turn] Darn, that sucks :( [end_of_conversation]</em></p>
+</blockquote>
+<p>This is a sample conversation between two speakers. What's special about it is that there are special tokens that signify when one of the speakers has finished talking, which we in the biz call a turn. If we treat this example like our previous one with the autorgressive language mode, we can do some interesting things:</p>
+<blockquote>
 <p><em>Hi, how are you? [end_of_turn] [blank]</em></p>
 </blockquote>
 <p>If we use the same logic as we did previously, it is easy to see how we can now use GPT2 to guess the next word in this conversation.</p>
@@ -418,7 +420,7 @@ This is a sample conversation between two speakers. What's special about it is t
 <h1 id="The-Data!">
 <a class="anchor" href="#The-Data!" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Data!<a class="anchor-link" href="#The-Data!"> </a>
 </h1>
-<p>To train our chatbot we will be using conversations scraped from subtitles of Spanish TV shows and movies. I've gone ahead and formated the data for us already, however, if you would like to use a different language to train your chatbot you can use <a href="https://">this script (Need to add link)</a> to generate a csv with the same format I am going to use in the rest of this tutorial.</p>
+<p>To train our chatbot we will be using conversations scraped from subtitles of Spanish TV shows and movies. I've gone ahead and formated the data for us already, however, if you would like to use a different language to train your chatbot you can use <a href="https://colab.research.google.com/drive/1kKErlSSpewQbWexFPEj1rPWsYpMx69ZS?usp=sharing">this script</a> to generate a csv with the same format I am going to use in the rest of this tutorial.</p>
 
 </div>
 </div>
@@ -1355,10 +1357,10 @@ To: /content/final_es_conv.csv
 
 
 
-<div id="ded21df1-4eff-46c9-ae29-f02990cc55b6"></div>
+<div id="7b0a922d-dbb1-486b-afdb-e11343ab7c94"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#ded21df1-4eff-46c9-ae29-f02990cc55b6');
+var element = $('#7b0a922d-dbb1-486b-afdb-e11343ab7c94');
 
         (async () => {
             const url = await google.colab.kernel.proxyPort(6006, {"cache": true});
