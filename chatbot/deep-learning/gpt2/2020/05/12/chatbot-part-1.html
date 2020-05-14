@@ -1355,10 +1355,10 @@ To: /content/final_es_conv.csv
 
 
 
-<div id="3a49390b-3f34-4e0e-9f00-c6491d2e7fac"></div>
+<div id="e44fa054-90eb-41c2-b55b-2b0f704cf96f"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#3a49390b-3f34-4e0e-9f00-c6491d2e7fac');
+var element = $('#e44fa054-90eb-41c2-b55b-2b0f704cf96f');
 
         (async () => {
             const url = await google.colab.kernel.proxyPort(6006, {"cache": true});
@@ -1612,7 +1612,7 @@ DialoGPT: ¿Por qué no me lo dijiste?
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, it ain't the best, however, training it for longer or using the DialogGPT-medium instead of DialogGPT-small does improve results, at least in my experiments. I decided to only include the DialogGPT-small in this tutorial due to the limited (But still AMAZING) resources of Google Colab. I've went ahead and trained a bigger DialogGPT-medium model for longer and have uploaded it to Huggingface for anyone to try out! Find the model card here.</p>
+<p>Now, it ain't the best, however, training it for longer or using the DialogGPT-medium instead of DialogGPT-small does improve results, at least in my experiments. I decided to only include the DialogGPT-small in this tutorial due to the limited (But still AMAZING) resources of Google Colab. I've went ahead and trained a bigger DialogGPT-medium model for longer and have uploaded it to Huggingface for anyone to try out! Find the <a href="https://huggingface.co/ncoop57/DiGPTame-medium">model card here</a>.</p>
 
 </div>
 </div>
@@ -1667,7 +1667,7 @@ DialoGPT: ¿Por qué no me lo dijiste?
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">transformers</span><span class="o">-</span><span class="n">cli</span> <span class="n">login</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> transformers-cli login
 <span class="c1"># log in using the same credentials as on huggingface.co</span>
 </pre></div>
 
@@ -1685,7 +1685,7 @@ DialoGPT: ¿Por qué no me lo dijiste?
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">transformers</span><span class="o">-</span><span class="n">cli</span> <span class="n">upload</span> <span class="n">output</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> transformers-cli upload output
 </pre></div>
 
     </div>
