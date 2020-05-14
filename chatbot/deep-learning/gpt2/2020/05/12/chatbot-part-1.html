@@ -1355,10 +1355,10 @@ To: /content/final_es_conv.csv
 
 
 
-<div id="e44fa054-90eb-41c2-b55b-2b0f704cf96f"></div>
+<div id="ded21df1-4eff-46c9-ae29-f02990cc55b6"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#e44fa054-90eb-41c2-b55b-2b0f704cf96f');
+var element = $('#ded21df1-4eff-46c9-ae29-f02990cc55b6');
 
         (async () => {
             const url = await google.colab.kernel.proxyPort(6006, {"cache": true});
@@ -1651,6 +1651,7 @@ DialoGPT: ¿Por qué no me lo dijiste?
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># First remove checkpoint files from being submit to huggingface</span>
 <span class="o">!</span> rm -rf output/checkpoint-*
+<span class="o">!</span> mv output &lt;name_of_model&gt;
 </pre></div>
 
     </div>
@@ -1685,7 +1686,7 @@ DialoGPT: ¿Por qué no me lo dijiste?
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> transformers-cli upload output
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> transformers-cli upload &lt;name_of_model&gt;
 </pre></div>
 
     </div>
