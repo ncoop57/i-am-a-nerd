@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Automatic Code Summarization Using Deep Learning | IAmANerd</title>
+<title>Improved Code Summarization | IAmANerd</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Automatic Code Summarization Using Deep Learning" />
+<meta property="og:title" content="Improved Code Summarization" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="In this tutorial you’ll learn about how to apply state of the art summarization models to source code!" />
 <meta property="og:description" content="In this tutorial you’ll learn about how to apply state of the art summarization models to source code!" />
@@ -17,7 +17,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-12-26T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://nathancooper.io/i-am-a-nerd/code/summarization/deep-learning/seq2seq/2020/12/26/Improved_Code_Commenter.html","@type":"BlogPosting","headline":"Automatic Code Summarization Using Deep Learning","dateModified":"2020-12-26T00:00:00-06:00","datePublished":"2020-12-26T00:00:00-06:00","image":"https://nathancooper.io/i-am-a-nerd/images/comment_gen_preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://nathancooper.io/i-am-a-nerd/code/summarization/deep-learning/seq2seq/2020/12/26/Improved_Code_Commenter.html"},"description":"In this tutorial you’ll learn about how to apply state of the art summarization models to source code!","@context":"https://schema.org"}</script>
+{"url":"https://nathancooper.io/i-am-a-nerd/code/summarization/deep-learning/seq2seq/2020/12/26/Improved_Code_Commenter.html","@type":"BlogPosting","headline":"Improved Code Summarization","dateModified":"2020-12-26T00:00:00-06:00","datePublished":"2020-12-26T00:00:00-06:00","image":"https://nathancooper.io/i-am-a-nerd/images/comment_gen_preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://nathancooper.io/i-am-a-nerd/code/summarization/deep-learning/seq2seq/2020/12/26/Improved_Code_Commenter.html"},"description":"In this tutorial you’ll learn about how to apply state of the art summarization models to source code!","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/i-am-a-nerd/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://nathancooper.io/i-am-a-nerd/feed.xml" title="IAmANerd" /><link rel="shortcut icon" type="image/x-icon" href="/i-am-a-nerd/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -88,7 +88,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Automatic Code Summarization Using Deep Learning</h1><p class="page-description">In this tutorial you'll learn about how to apply state of the art summarization models to source code!</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-12-26T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Improved Code Summarization</h1><p class="page-description">In this tutorial you'll learn about how to apply state of the art summarization models to source code!</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-12-26T00:00:00-06:00" itemprop="datePublished">
         Dec 26, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -258,6 +258,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -277,6 +280,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -466,6 +470,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -500,6 +507,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -530,6 +538,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -596,6 +607,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -635,6 +647,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -738,6 +753,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -778,6 +794,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -793,6 +812,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -822,6 +842,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -847,6 +870,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -877,6 +901,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -915,6 +942,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -945,6 +973,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -968,6 +999,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -982,6 +1014,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -1005,6 +1040,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -1128,6 +1164,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -1171,6 +1210,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -1195,6 +1235,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -1222,6 +1265,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -1280,6 +1324,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -1299,6 +1346,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -1383,6 +1431,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -1429,6 +1480,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -1542,6 +1594,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -1571,6 +1626,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -1671,6 +1727,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -1697,6 +1756,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -1754,6 +1814,9 @@ Original Comment: the tag of the related component must be set, so that a dojo b
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -1795,6 +1858,7 @@ Original Comment: the tag of the related component must be set, so that a dojo b
 </div>
 </div>
 
+    </details>
 </div>
     
 
