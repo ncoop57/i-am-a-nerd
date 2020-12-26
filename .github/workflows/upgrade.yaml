@@ -168,6 +168,8 @@ jobs:
       if: steps.check_version.outputs.vbump == 'true'
       with:
           ssh-private-key: ${{ secrets.SSH_DEPLOY_KEY }}
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
                         
     - name: push changes to branch
       if: steps.check_version.outputs.vbump == 'true'
