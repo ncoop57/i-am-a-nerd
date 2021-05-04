@@ -42,12 +42,12 @@ DeepSpeed is a library that enables the awesome [Zero Redundancy Optimizer (ZeRO
 
 ## Putting DeepSpeed to the Test!
 
-To test out DeepSpeed, I used the awesome HuggingFace transformers library, which supports using DeepSpeed on their non-stable branch (though support is coming to the stable branch in 4.6 🤓). I followed these awesome [instructions](https://huggingface.co/transformers/master/main_classes/trainer.html#deepspeed) on the HuggingFace’s website for getting started with DeepSpeed and HuggingFace. If you want to follow along at home, I created a Github repository with the Dockerfile (I’m addicted to docker and will probably make a blog post on docker too :)) and the test script I used to run my experiments on. I tried training the different versions of the awesome [T5 model](https://arxiv.org/abs/1910.10683) that ranged from smallish ~60 million parameters to humungous 3 billion parameters. And here are my results:
+To test out DeepSpeed, I used the awesome HuggingFace transformers library, which supports using DeepSpeed on their non-stable branch (though support is coming to the stable branch in 4.6 🤓). I followed these awesome [instructions](https://huggingface.co/transformers/master/main_classes/trainer.html#deepspeed) on the HuggingFace’s website for getting started with DeepSpeed and HuggingFace. If you want to follow along at home, I created a Github [repository](https://github.com/ncoop57/deepspeed_testing) with the Dockerfile (I’m addicted to docker and will probably make a blog post on docker too :)) and the test script I used to run my experiments on. I tried training the different versions of the awesome [T5 model](https://arxiv.org/abs/1910.10683) that ranged from smallish ~60 million parameters to humungous 3 billion parameters. And here are my results:
 
 
 
 ![Bar chart showing DeepSpeed increases time to train, but allows training larger models compared to not using DeepSpeed.]({{ site.baseurl }}/images/deepspeed_chart.png)
-
+_This was run on a machine with Ubuntu 20.04, 32GBs of RAM, Ryzen 5600x, and NVIDIA RTX 3080 GPU._
 
 
 
