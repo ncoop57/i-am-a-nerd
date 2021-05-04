@@ -1,6 +1,7 @@
 ---
 title: "DeepSpeed Investigation: What I Learned"
 description: "An investigation into the awesome DeepSpeed library for training large models on a single GPU!"
+image: images/deepspeed_overview.png
 toc: true
 comments: true
 layout: post
@@ -33,7 +34,8 @@ Some impressive statements, but are they true? Kind of. Let’s dig a bit deeper
 
 
 
-![Overview of the large improvement ZeRO-2 and the DeepSpeed library has over ZeRO-2 and previous approaches.](https://www.microsoft.com/en-us/research/uploads/prod/2020/05/1400x788DeepSpeedslowed.gif "image_tooltip")
+![Overview of the large improvement ZeRO-2 and the DeepSpeed library has over ZeRO-2 and previous approaches.](https://www.microsoft.com/en-us/research/uploads/prod/2020/05/1400x788DeepSpeedslowed.gif)
+_From https://www.microsoft.com/en-us/research/blog/zero-2-deepspeed-shattering-barriers-of-deep-learning-speed-scale/_
 
 DeepSpeed is a library that enables the awesome [Zero Redundancy Optimizer (ZeRO)](https://arxiv.org/abs/1910.02054), which is a highly optimized optimizer (oh how clever) that improves memory management and communication in data or model parallelized work loads by removing redundancy. Now, this might bring up the question “parallelized work loads, I thought we could use this on a single GPU, what’s the deal?” So, the deal is that ZeRO was made to solve the problem of communication between multiple devices by doing some nifty memory tricks that are beyond the scope of this blog post (and my understanding. See [here](https://youtu.be/tC01FRB0M7w) for a full explanation of this.). It just so happens that the ZeRO optimizer also performs CPU offloading, which moves some of the computation off your GPU and onto your CPU. With things being computed on your CPU, some of the model is stored in RAM rather than the GPUs VRAM. This significantly slows computation since CPUs and RAM wasn’t built with this in mind, but it means you are allowed to train bigger models 🤓.
 
