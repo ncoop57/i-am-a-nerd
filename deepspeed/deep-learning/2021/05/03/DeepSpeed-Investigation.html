@@ -14,10 +14,11 @@
 <link rel="canonical" href="https://nathancooper.io/i-am-a-nerd/deepspeed/deep-learning/2021/05/03/DeepSpeed-Investigation.html" />
 <meta property="og:url" content="https://nathancooper.io/i-am-a-nerd/deepspeed/deep-learning/2021/05/03/DeepSpeed-Investigation.html" />
 <meta property="og:site_name" content="IAmANerd" />
+<meta property="og:image" content="https://nathancooper.io/i-am-a-nerd/images/deepspeed_overview.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-05-03T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://nathancooper.io/i-am-a-nerd/deepspeed/deep-learning/2021/05/03/DeepSpeed-Investigation.html","@type":"BlogPosting","headline":"DeepSpeed Investigation: What I Learned","dateModified":"2021-05-03T00:00:00-05:00","datePublished":"2021-05-03T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://nathancooper.io/i-am-a-nerd/deepspeed/deep-learning/2021/05/03/DeepSpeed-Investigation.html"},"author":{"@type":"Person","name":"Nathan Cooper"},"description":"An investigation into the awesome DeepSpeed library for training large models on a single GPU!","@context":"https://schema.org"}</script>
+{"url":"https://nathancooper.io/i-am-a-nerd/deepspeed/deep-learning/2021/05/03/DeepSpeed-Investigation.html","@type":"BlogPosting","headline":"DeepSpeed Investigation: What I Learned","dateModified":"2021-05-03T00:00:00-05:00","datePublished":"2021-05-03T00:00:00-05:00","image":"https://nathancooper.io/i-am-a-nerd/images/deepspeed_overview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://nathancooper.io/i-am-a-nerd/deepspeed/deep-learning/2021/05/03/DeepSpeed-Investigation.html"},"author":{"@type":"Person","name":"Nathan Cooper"},"description":"An investigation into the awesome DeepSpeed library for training large models on a single GPU!","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/i-am-a-nerd/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://nathancooper.io/i-am-a-nerd/feed.xml" title="IAmANerd" /><link rel="shortcut icon" type="image/x-icon" href="/i-am-a-nerd/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -142,7 +143,8 @@ window.onload = wrap_img;
 
 <p>Some impressive statements, but are they true? Kind of. Let’s dig a bit deeper into how this works.</p>
 
-<p><img src="https://www.microsoft.com/en-us/research/uploads/prod/2020/05/1400x788DeepSpeedslowed.gif" alt="Overview of the large improvement ZeRO-2 and the DeepSpeed library has over ZeRO-2 and previous approaches." title="image_tooltip"></p>
+<p><img src="https://www.microsoft.com/en-us/research/uploads/prod/2020/05/1400x788DeepSpeedslowed.gif" alt="Overview of the large improvement ZeRO-2 and the DeepSpeed library has over ZeRO-2 and previous approaches.">
+<em>From https://www.microsoft.com/en-us/research/blog/zero-2-deepspeed-shattering-barriers-of-deep-learning-speed-scale/</em></p>
 
 <p>DeepSpeed is a library that enables the awesome <a href="https://arxiv.org/abs/1910.02054">Zero Redundancy Optimizer (ZeRO)</a>, which is a highly optimized optimizer (oh how clever) that improves memory management and communication in data or model parallelized work loads by removing redundancy. Now, this might bring up the question “parallelized work loads, I thought we could use this on a single GPU, what’s the deal?” So, the deal is that ZeRO was made to solve the problem of communication between multiple devices by doing some nifty memory tricks that are beyond the scope of this blog post (and my understanding. See <a href="https://youtu.be/tC01FRB0M7w">here</a> for a full explanation of this.). It just so happens that the ZeRO optimizer also performs CPU offloading, which moves some of the computation off your GPU and onto your CPU. With things being computed on your CPU, some of the model is stored in RAM rather than the GPUs VRAM. This significantly slows computation since CPUs and RAM wasn’t built with this in mind, but it means you are allowed to train bigger models 🤓.</p>
 
